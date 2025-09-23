@@ -2,6 +2,7 @@ package xyz.catgirlcentral.flagapolski;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -11,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView textViewPolecenie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,20 +25,22 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        textViewPolecenie = findViewById(R.id.textView);
     }
 
-    int deleto = 0;
+    private int numberDeletes = 0;
 
     public void delete(View view) {
         view.setVisibility(view.INVISIBLE); // solid snake omagod
-        deleto++;
-        if (deleto == 4) {
+        numberDeletes++;
+        if (numberDeletes == 4) {
             Toast.makeText(this, R.string.win, Toast.LENGTH_SHORT).show();
         }
     }
 
     public void nope(View view) {
-        if (deleto != 4) {
+        if (numberDeletes != 4) {
             Toast.makeText(this, R.string.comune, Toast.LENGTH_SHORT).show();
         }
         else {
