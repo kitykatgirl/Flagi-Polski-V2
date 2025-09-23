@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="landlubber_sized">24sp</dimen>
+    <dimen name="yer_bird_size">16dp</dimen>
+    <dimen name="plank_size">14dp</dimen>
+</resources>

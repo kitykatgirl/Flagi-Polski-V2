@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ships_deck">#6D3923</color>
+    <color name="yer_sea">#7DC0FB</color>
+    <color name="british_blood">#BC0303</color>
+</resources>

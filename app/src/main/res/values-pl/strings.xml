@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlagaPolski</string>
+    <string name="landlubber_question">Wybierz kolory których nie ma w fladze polski bracie!</string>
+    <string name="comune">Ten kolor jest w polskiej fladze bracie!</string>
+</resources>
