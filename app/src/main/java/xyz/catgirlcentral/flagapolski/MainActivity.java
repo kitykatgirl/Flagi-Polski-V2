@@ -35,16 +35,13 @@ public class MainActivity extends AppCompatActivity {
         view.setVisibility(view.INVISIBLE); // solid snake omagod
         numberDeletes++;
         if (numberDeletes == 4) {
-            Toast.makeText(this, R.string.win, Toast.LENGTH_SHORT).show();
+            textViewPolecenie.setText(R.string.win);
         }
     }
 
     public void nope(View view) {
         if (numberDeletes != 4) {
             Toast.makeText(this, R.string.comune, Toast.LENGTH_SHORT).show();
-        }
-        else {
-            Toast.makeText(this,R.string.win,Toast.LENGTH_SHORT).show();
         }
     }
 }
